@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./face-api.min.js"></script>
+    <script src="./ImageFace.js"></script>
+    <style>
+      body {
+        background: linear-gradient(135deg, white, grey);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+      }
+      #myImg {
+        width: 450px;
+        height: 450px;
+        background-color: white;
+        border-radius: 40px;
+      }
+      .container {
+        margin-top: 5%;
+        position: relative;
+      }
+      canvas {
+        position: absolute;
+        left: 0;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="" alt="" id="myImg" />
+    </div>
+    <input
+      type="file"
+      id="myFile"
+      onchange="uploadImage()"
+      accept=".jpg,.jpeg,.png"
+    />
+  </body>
+</html>

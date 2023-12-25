@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, white, grey);
+}
+
+video {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+canvas {
+  position: absolute;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  canvas {
+    width: 280px;
+  }
+}
